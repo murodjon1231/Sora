@@ -1,0 +1,292 @@
+/* Asosiy.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.nav-item {
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-item.active {
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.title{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #336183;  
+    padding: 22px;
+}
+.title1{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;   
+    text-align: center; 
+    color: #000;  
+    padding: 2px;
+}
+.zakaz-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff; 
+    color: #000; 
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+}
+
+.zakaz-item:hover {
+    background-color: #f9f9f9;
+}
+
+.zakaz-item strong {
+    display: block;
+    font-size: 16px;
+}
+.zakaz-item div {
+    display: flex;
+   
+}
+.zakaz-item div ul li{
+    list-style-type: none;    
+}
+
+.zakz{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #595959;    
+}
+.zakz1{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+}
+.zakaz-item button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #007bff;
+    cursor: pointer;
+    transform: rotate(0deg); 
+    transition: transform 0.2s;
+}
+
+.zakaz-item button:hover {
+    color: #0056b3; 
+}
+
+.dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.input1 {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 19.5px;
+    padding-bottom: 19.5px;
+    border-radius: 12px;
+    border: 1px solid #6D6D6D;    
+}
+
+.timeSelect {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #6D6D6D;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.submit-btn, .delete-btn, .confirm-btn, .cancel-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.submit-btn:hover, .delete-btn:hover, .confirm-btn:hover, .cancel-btn:hover {
+    background-color: #0056b3;
+}
+.timeSelect {
+    padding: 10px;
+    margin: 5px 1%;
+    border-radius: 8px;
+    border: 1px solid #6D6D6D;
+    font-size: 14px;
+    color: #6D6D6D;
+    background: #fff;
+    text-align: center;
+}
+.row1{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.input2{
+    padding: 16px;
+    border-radius: 12px;
+    border: 2px solid #2863EB; 
+    width: 337px;   
+    margin-top: 10px;
+}
+#zakazForm{
+    display: grid;
+    justify-content: center;
+}
+.btn33{
+    margin-top: 200px;
+    padding: 10px 103px 10px 103px;
+    gap: 10px;
+    border-radius: 12px;
+    background-color: #24FF0026;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #04D100;
+    border: none;
+}
+.btn34{
+    margin-top: 200px;
+    padding: 10px 122px 10px 122px;
+    border-radius: 12px;
+    background-color: #FF000026;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #F80000;
+    border: none;  
+}
+.inpu2{
+    padding: 16px;
+    border-radius: 12px;
+    border: 2px solid #FFE09E; 
+    width: 337px;   
+    margin-top: 20px; 
+}
+.inpu3{
+    padding: 16px;
+    border-radius: 12px;
+    border: 2px solid #FFE09E; 
+    width: 337px;   
+    margin-top: 20px; 
+
+}
+.bosh-oriq{
+    position: relative;
+    color: #336183;
+    top: -26px;
+    padding-top: 10px;
+}
+.dialog-content{
+    width:227px;
+    height:158px;
+    top: 302px;
+    left: 24px;
+    padding: 14px;
+    gap: 24px;
+    border-radius: 16px;
+    
+}
+.dialog-content p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #72777A;  
+}
+#confirmDelete{
+    border: 1px solid #E9E9E9;
+    width: 100px;
+    height: 48px;
+    border-radius: 32px;    
+    background-color: #ffffff00;
+}
+#cancelDelete{
+    background: #FF000026;
+    border: none;
+    width: 100px;
+    height: 48px;
+    border-radius: 32px;  
+}
+.btn{
+    display: flex;
+    padding-top: 20px;
+}

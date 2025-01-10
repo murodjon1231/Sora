@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening Zakazlarim</title>
+    <link rel="icon" href="./Sara logo.svg">
+    <link rel="stylesheet" href="Asosiy.css">
+</head>
+
+<body>
+
+
+    <div class="container" id="page1">
+        <h1 style="padding: 5px;" class="title1">Sardor</h1>
+        <hr style="opacity: 25%; margin-top: 20px;">
+        <h1 style="padding-bottom: 15px;"  class="title">Mening zakazlarim</h1>
+        <div class="zakaz-list" id="zakazList" style="padding-bottom: 100px;"></div>
+    </div>
+
+    <div class="container" id="page2" style="display: none;">
+
+        <h1 style="padding: 5px;" class="title1">Sardor</h1>
+        <hr style="opacity: 25%; margin-top: 20px;">
+
+        <h1 style="padding-bottom: 15px;" class="title">Zakaz qo’shish</h1>
+        <form id="zakazForm">
+            <div class="row1">
+                <input class="input1" type="date" id="dateInput" >
+                <div class="row44">
+                    <select class="timeSelect" id="startTimeSelect" required>
+                        <option value="" disabled selected>16:00 dan</option>
+                        <option value="16:00">16:00 dan</option>
+                        <option value="17:00">17:00 dan</option>
+                        <option value="18:00">18:00 dan</option>
+                        <option value="19:00">19:00 dan</option>
+                    </select>
+                    <select class="timeSelect" id="endTimeSelect" required>
+                        <option value="" disabled selected>16:30 gacha</option>
+                        <option value="16:30">16:30 gacha</option>
+                        <option value="17:30">17:30 gacha</option>
+                        <option value="18:30">18:30 gacha</option>
+                        <option value="19:30">19:30 gacha</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row2">
+                <input type="text" id="nameInput" class="input2" placeholder="Ism kiriting" required>
+            </div>
+            <div class="row3">
+                <input type="tel" id="phoneInput" class="input2" placeholder="+99 8(**)-***-**-**" required>
+            </div>
+            <div class="row4">
+                <input id="commentInput" class="input2" placeholder="Izoh kiriting"></input>
+            </div>
+            <div class="row4">
+                <button class="btn33" type="submit">Zakazni saqlash</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container" id="zakazDetails" style="display: none;">
+        <h1 style="padding: 5px;" class="title1">Sardor</h1>
+        <hr style="opacity: 25%; margin-top: 20px;">
+        <h1 style="padding-bottom: 15px;"  class="title">Zakaz haqida ma'lumot</h1>
+        <div id="zakazInfo"></div>
+        <button class="btn34" id="deleteZakazBtn">bekor qilish</button>
+    </div>
+
+    <div  class="dialog" id="dialog" style=" display: none; ">
+        <div class="dialog-content">
+            <h1 style="color: #090A0A; font-size: 24px; text-align: center;">Bekor qilish</h1>
+            <p>Siz rostan ham zakazni bekor qilmoqchimisiz?</p>
+            <div class="btn">
+                <button id="confirmDelete">Ha</button>
+                <button id="cancelDelete">Yo'q</button>
+            </div>
+        </div>
+    </div>
+
+    <div  class="navbar">
+        <div class="nav-item active" id="page1Btn">
+            <img src="./home-2.svg" alt="">
+            <p>Asosiy</p>
+        </div>
+        <div class="nav-item" id="page2Btn">
+            <img src="./note-favorite.svg" alt="">
+            <p>Qo’shish</p>
+        </div>
+        <div class="nav-item">
+            <img src="./profile.svg" alt="">
+            <p>Profile</p>
+        </div>
+    </div>
+
+    <script src="Asosiy.js"></script>
+</body>
+
+</html>
