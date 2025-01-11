@@ -215,6 +215,7 @@ body {
     text-decoration-skip-ink: none;
     color: #04D100;
     border: none;
+    margin-bottom: 100px;
 }
 .btn34{
     margin-top: 200px;
@@ -230,6 +231,7 @@ body {
     text-decoration-skip-ink: none;
     color: #F80000;
     border: none;  
+    margin-bottom: 100px;
 }
 .inpu2{
     padding: 16px;
