@@ -58,10 +58,38 @@ function updateZakazList() {
                     <li style = "padding-right: 10px;"><strong></strong> ${zakaz.startTime} - ${zakaz.endTime}</li>
                 </ul>
             </div>
-            <button onclick="showZakazDetails(${index})"><img src="./arrow-right.svg" alt=""></button>
+            <button onclick="showZakazDetails(${index})">➡</button>
         `;
         zakazList.appendChild(zakazItem);
     });
+}
+function filterZakazlar() {
+    const filterDate = document.getElementById('filterDate').value;
+    const filteredZakazlar = zakazlar.filter(zakaz => zakaz.date === filterDate);
+
+    zakazList.innerHTML = '';
+    filteredZakazlar.forEach((zakaz, index) => {
+        const zakazItem = document.createElement('div');
+        zakazItem.classList.add('zakaz-item');
+        zakazItem.innerHTML = `
+            <div>
+                <ul>
+                    <li style="padding-right: 10px;"><strong></strong> ${zakaz.name}</li>
+                    <li style="padding-right: 10px;"><strong></strong> ${zakaz.phone}</li>
+                </ul>
+                <ul>
+                    <li style="padding-right: 10px;"><strong></strong> ${zakaz.date}</li>
+                    <li style="padding-right: 10px;"><strong></strong> ${zakaz.startTime} - ${zakaz.endTime}</li>
+                </ul>
+            </div>
+            <button onclick="showZakazDetails(${index})">➡</button>
+        `;
+        zakazList.appendChild(zakazItem);
+    });
+
+    if (filteredZakazlar.length === 0) {
+        zakazList.innerHTML = '<p style="text-align: center;">Ushbu sana uchun zakazlar topilmadi.</p>';
+    }
 }
 
 function showZakazDetails(index) {
